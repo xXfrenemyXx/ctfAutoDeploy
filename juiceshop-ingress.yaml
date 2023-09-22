@@ -5,13 +5,14 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
-  name: rewrite
+#    nginx.ingress.kubernetes.io/rewrite-target: /
   namespace: default
 spec:
   rules:
     - http:
         paths:
           - path: /juiceshop(/|$)(.*)
+#          - path: /
             pathType: Prefix
             backend:
               service:
