@@ -19,4 +19,4 @@ spec:
       - name: ctfd
         image: ctfd/ctfd
         ports:
-        - containerPort: 6000
+        - containerPort: 8000

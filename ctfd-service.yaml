@@ -8,5 +8,8 @@ spec:
   ports:
     - name: ctfd-prot
       protocol: TCP
-      port: 6000
-      targetPort: 6000
+      port: 8000
+      targetPort: 8000
+      nodePort: 30800
+  type: NodePort
+

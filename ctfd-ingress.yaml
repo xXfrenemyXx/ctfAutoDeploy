@@ -3,15 +3,19 @@ kind: Ingress
 metadata:
   name: ctfd-ingress
   annotations:
+#    nginx.ingress.kubernetes.io/use-regex: "true"
+#    nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/rewrite-target: /
+  namespace: default
 spec:
   rules:
     - http:
         paths:
+#          - path: /ctfd(\/|$)(.*)
           - path: /
             pathType: Prefix
             backend:
               service:
                 name: ctfd-service
                 port:
-                  number: 6000
+                  number: 8000
