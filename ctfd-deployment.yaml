@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ctfd
-        image: ctfd/ctfd
-        imagePullPolicy: IfNotPresent
+        image: ghcr.io/xxfrenemyxx/cloudinfrastructure/configuredctfd:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8000
