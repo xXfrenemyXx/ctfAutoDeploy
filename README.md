@@ -1,5 +1,7 @@
 # ctfAutoDeploy
 ## 1 Einführung
+Das Projekt wurde ausschließlich von mir, Florian Spohn erstellt.
+
 Das System wurde unter Verwendung von Ubuntu 22.04. in einer VM entwickelt und getestet. 
 Die Container wurden mit minikube betrieben.
 Capture the Flags (CTFs) sind typische Spiele im Bereich der Cybersecurity, in dem Hacker flags bei vulnerablen Anwendungen (bspw. der Juiceshop) ergattern und diese bei einem Scoreboard, wie dem CTFd, gegen Punkte einlösen können.
@@ -94,4 +96,17 @@ Der Screencast ist in der ZIP im Abgabe-Bereich zu finden.
 ## 7 Alternative Realisierungsmöglichkeiten:
 - Monolithische Architektur: Eine monolithische Anwendung könnte für einfachere Anwendungen ohne komplexe Anforderungen geeignet sein. Obwohl das in diesem Fall schwierig wäre, der CTFd und der Juiceshop bereits getrennte Systeme sind.
 - Traditionelle Bereitstellung: Traditionelle, nicht-containerisierte Bereitstellungsmethoden wäre hier als Alternative möglich. Jedoch überwiegen bei diesem Anwendungsfall klar die Vorteile der Cloud.
+
+## 8 Datenschutz und Datensicherheit
+### 8. Datenschutz
+Grundsätzlich ist gerade der Datenschutz ein nicht zu vernachlässigendes Thema, gerade in der Cloud. Hier ist es nicht transparent, wo welche Daten wann wie und für was verarbeitet werden. Daher sollte hier immer auf Datensparsamkeit geachtet und bestmöglich der Datenschutz garantiert werden. 
+Dabei sollten folgende Aspekte berücksichtigt werden:
+- Rechtskonformität
+- Allgemeine Betrachtung:
+--- Rechtskonformität in der Cloud bezieht sich darauf, dass die Datenverarbeitung den geltenden Datenschutzgesetzen entspricht, unabhängig davon, ob die Daten lokal oder in der Cloud gespeichert sind.
+-- Spezifische Maßnahmen:
+--- Einhaltung lokaler Datenschutzgesetze und internationaler Standards wie der DSGVO.
+--- Klare Identifizierung und Dokumentation der Verarbeitung personenbezogener Daten.
+- Transparenz und Einwilligung
+- Datenvermeidung und -minimierung
 
