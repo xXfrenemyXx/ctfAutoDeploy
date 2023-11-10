@@ -103,9 +103,10 @@ Grundsätzlich ist gerade der Datenschutz ein nicht zu vernachlässigendes Thema
 Dabei sollten folgende Aspekte berücksichtigt werden:
 
 #### Rechtskonformität
-Allgemeine Betrachtung:
+##### Allgemeine Betrachtung:
 - Rechtskonformität in der Cloud bezieht sich darauf, dass die Datenverarbeitung den geltenden Datenschutzgesetzen entspricht, unabhängig davon, ob die Daten lokal oder in der Cloud gespeichert sind.
-Spezifische Maßnahmen:
+Spezifische
+##### Maßnahmen:
 - Einhaltung lokaler Datenschutzgesetze und internationaler Standards wie der DSGVO.
 - Klare Identifizierung und Dokumentation der Verarbeitung personenbezogener Daten.
 
