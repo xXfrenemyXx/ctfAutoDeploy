@@ -18,13 +18,35 @@ Im folgenden Projekt werden verschiedene Aspekte behandelt:
         <td>locale IP</td>
         <td>example.com</td>
     </tr>
+    <tr>
+        <td>locale IP</td>
+        <td></td>juicewatcher.com</td>
+    </tr>
+    <tr>
+            <td>locale IP</td>
+            <td>ctfd.example.com</td>
+        </tr>
+        <tr>
+            <td>locale IP</td>
+            <td>team1.example.com</td>
+        </tr>
+        <tr>
+            <td>locale IP</td>
+            <td>team2.example.com</td>
+        </tr>
+        <tr>
+            <td>locale IP</td>
+            <td>team3.example.com</td>
+        </tr>
+        <tr>
+            <td>locale IP</td>
+            <td>team4.example.com</td>
+        </tr>
+        <tr>
+            <td>locale IP</td>
+            <td>team5.example.com</td>
+        </tr>
 </table>
-<ol>
-<li></li>
-<li>locale IP 	juicewatcher.com
-</li>
-<li>Maus</li>
-</ol>
 
 <locale IP> 	ctfd.example.com
 <locale IP> 	team1.example.com
