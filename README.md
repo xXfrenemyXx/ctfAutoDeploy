@@ -12,7 +12,7 @@ Im folgenden Projekt werden verschiedene Aspekte behandelt:
 - skaffold installiert
 - kubectl installiert
 - ingress addons enabled
-- hosts file nach folgendem Schema angepasst:
+- hosts file nach folgendem Schema anpassen:
 <table>
     <tr>
         <td>locale IP</td>
@@ -48,7 +48,7 @@ Im folgenden Projekt werden verschiedene Aspekte behandelt:
         </tr>
 </table>
 
-## 3 Installation:
-git clone https://github.com/xXfrenemyXx/ctfAutoDeploy.git
+## 3 Applikationen startn:
+`git clone https://github.com/xXfrenemyXx/ctfAutoDeploy.git`
 cd ctfAutoDeploy
 skaffold dev
