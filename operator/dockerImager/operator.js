@@ -51,7 +51,6 @@ async function checkForUnnecessaryDeployments(apis, CTFdTeams) {
     
     // Extrahiere die Namen der vorhandenen Deployments und konvertiere zu lowercase
     const existingDeployments = deploymentList.body.items.map(deployment => deployment.metadata.name.toLowerCase());
-    console.log(existingDeployments)
     // Finde Deployments, die in Kubernetes existieren, "team" enthalten, aber nicht in CTFdTeams
     const deploymentsNotInCTFd = existingDeployments
       .map(deployment => deployment.replace('-deployment', ''))
@@ -131,7 +130,7 @@ async function createRessources(apis, teamName) {
                 env: [
                   {
                     name: 'CTF_KEY',
-                    value: 'your_ctf_key_value_here',
+                    value: '123456789abcdef',
                   },
                   {
                     name: 'NODE_ENV',
