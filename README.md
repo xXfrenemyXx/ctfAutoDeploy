@@ -15,7 +15,8 @@ Im folgenden Projekt werden verschiedene Aspekte behandelt:
 - hosts file nach folgendem Schema angepasst:
 <table>
     <tr>
-        <td>locale IP 	example.com</td>
+        <td>locale IP</td>
+        <td>example.com</td>
     </tr>
 </table>
 <ol>
