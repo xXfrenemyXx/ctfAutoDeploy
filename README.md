@@ -98,7 +98,7 @@ Der Screencast ist in der ZIP im Abgabe-Bereich zu finden.
 - Traditionelle Bereitstellung: Traditionelle, nicht-containerisierte Bereitstellungsmethoden wäre hier als Alternative möglich. Jedoch überwiegen bei diesem Anwendungsfall klar die Vorteile der Cloud.
 
 ## 8 Datenschutz und Datensicherheit
-### 8.1 Datenschutz
+### 8.1 Datenschutz in der Cloud
 Grundsätzlich ist gerade der Datenschutz ein nicht zu vernachlässigendes Thema, gerade in der Cloud. Hier ist es nicht transparent, wo welche Daten wann wie und für was verarbeitet werden. Daher sollte hier immer auf Datensparsamkeit geachtet und bestmöglich der Datenschutz garantiert werden. 
 Dabei sollten folgende Aspekte berücksichtigt werden:
 
@@ -121,3 +121,22 @@ Dabei sollten folgende Aspekte berücksichtigt werden:
 ##### Spezifische Maßnahmen:
 - Begrenzte Sammlung von Daten auf das Minimum, das für die Diensterbringung oder Anwendungsleistung erforderlich ist.
 - Regelmäßige Überprüfung und Entfernung von nicht mehr benötigten Daten.
+
+### 8.2 Datensicherheit in der Cloud
+#### Zugriffskontrolle und Authentifizierung:
+##### Allgemeine Betrachtung:
+##### Spezifische Maßnahmen:
+
+#### Verschlüsselung:
+##### Allgemeine Betrachtung:
+##### Spezifische Maßnahmen:
+
+#### Netzwerksicherheit:
+##### Allgemeine Betrachtung:
+##### Spezifische Maßnahmen:
+
+#### Sicherheitsüberwachung und -prüfung:
+##### Allgemeine Betrachtung:
+##### Spezifische Maßnahmen:
+
+
