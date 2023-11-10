@@ -51,18 +51,21 @@ async function checkForUnnecessaryDeployments(apis, CTFdTeams) {
     
     // Extrahiere die Namen der vorhandenen Deployments und konvertiere zu lowercase
     const existingDeployments = deploymentList.body.items.map(deployment => deployment.metadata.name.toLowerCase());
-    
-    // Finde Deployments, die in Kubernetes existieren, aber nicht in CTFdTeams
+    console.log(existingDeployments)
+    // Finde Deployments, die in Kubernetes existieren, "team" enthalten, aber nicht in CTFdTeams
     const deploymentsNotInCTFd = existingDeployments
+      .map(deployment => deployment.replace('-deployment', ''))
       .filter(deployment => deployment.includes('team'))
-      .filter(deployment => !CTFdTeams.includes(deployment))
-      .map(deployment => deployment.replace('-deployment', ''));
+      .filter(deployment => !CTFdTeams.includes(deployment));
       
     return deploymentsNotInCTFd;
   } catch (error) {
     console.error('Fehler beim Überprüfen der Deployments:', error);
   }
 }
+
+
+
 
 async function getCTFdTeams() { 
   try {
@@ -92,45 +95,56 @@ async function createRessources(apis, teamName) {
     const appLabel = `${teamName}-label`
 
     const deployment = {
-        apiVersion: 'apps/v1',
-        kind: 'Deployment',
-        metadata: {
-            name: `${teamName}-deployment`,
+      apiVersion: 'apps/v1',
+      kind: 'Deployment',
+      metadata: {
+        name: `${teamName}-deployment`,
+        labels: {
+          app: teamName,
+          team: teamName,
+        },
+      },
+      spec: {
+        replicas: 1,
+        selector: {
+          matchLabels: {
+            app: teamName,
+          },
+        },
+        template: {
+          metadata: {
             labels: {
               app: teamName,
-              team: teamName,
             },
           },
           spec: {
-            replicas: 1,
-            selector: {
-              matchLabels: {
-                app: teamName,
-              },
-            },
-            template: {
-              metadata: {
-                labels: {
-                  app: teamName,
-                },
-              },
-              spec: {
-                containers: [
+            containers: [
+              {
+                name: teamName,
+                image: 'bkimminich/juice-shop',
+                imagePullPolicy: 'IfNotPresent',
+                ports: [
                   {
-                    name: teamName,
-                    image: 'bkimminich/juice-shop', 
-                    imagePullPolicy: 'IfNotPresent',
-                    ports: [
-                      {
-                        containerPort: 3000,
-                      },
-                    ],
+                    containerPort: 3000,
+                  },
+                ],
+                env: [
+                  {
+                    name: 'CTF_KEY',
+                    value: 'your_ctf_key_value_here',
+                  },
+                  {
+                    name: 'NODE_ENV',
+                    value: 'ctf',
                   },
                 ],
               },
-            },
+            ],
           },
-        };
+        },
+      },
+    };
+    
 
     const service = {
         apiVersion: 'v1',
