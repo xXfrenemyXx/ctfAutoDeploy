@@ -1,0 +1,9 @@
+{
+  "name": "mein-projekt",
+  "version": "1.0.0",
+  "dependencies": {
+    "@kubernetes/client-node": "0.20.0", 
+    "axios": "^0.24.0",
+    "express": "^4.17.3"
+  }
+}

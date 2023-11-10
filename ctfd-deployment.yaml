@@ -18,5 +18,6 @@ spec:
       containers:
       - name: ctfd
         image: ctfd/ctfd
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8000

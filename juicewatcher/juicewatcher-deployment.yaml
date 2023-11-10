@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: juicewatcher-deployment
+  labels:
+    app: juicewatcher
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: juicewatcher
+  template:
+    metadata:
+      labels:
+        app: juicewatcher
+    spec:
+      serviceAccountName: juicewatcher 
+      containers:
+      - name: juicewatcher
+        image: juicewatcher-image
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80

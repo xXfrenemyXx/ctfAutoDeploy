@@ -1,16 +1,17 @@
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ctfd-ingress
+  name: juicewatcher-ingress
 spec:
   rules:
-  - host: ctfd.example.com
+  - host: juicewatcher.example.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-                name: ctfd-service
+                name: juicewatcher-service
                 port:
-                  number: 8000
+                  number: 80

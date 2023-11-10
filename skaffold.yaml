@@ -1,0 +1,25 @@
+apiVersion: skaffold/v4beta6
+kind: Config
+metadata:
+  name: ctfautodeploy
+manifests:
+  rawYaml:
+#    - ctfd-deployment.yaml
+    - ctfd-ingress.yaml
+    - ctfd-service.yaml
+#    - juiceshop-deployment.yaml
+#    - juiceshop-ingress.yaml
+#    - juiceshop-service.yaml
+    - juicewatcher/juicewatcher-role.yaml
+    - juicewatcher/juicewatcher-rolebinding.yaml
+    - juicewatcher/juicewatcher-deployment.yaml
+    - juicewatcher/juicewatcher-ingress.yaml
+    - juicewatcher/juicewatcher-service.yaml
+    - juicewatcher/juicewatcher-serviceaccount.yaml    
+    - operator/operator-deployment.yaml
+    - operator/operator-rolebinding.yaml
+    - operator/operator-role.yaml
+    - operator/operator-serviceaccount.yaml
+#    - operator/operator-ingress.yaml
+#    - operator/operator-service.yaml
+#    - test.yaml
