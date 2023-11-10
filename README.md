@@ -20,7 +20,7 @@ Im folgenden Projekt werden verschiedene Aspekte behandelt:
     </tr>
     <tr>
         <td>locale IP</td>
-        <td></td>juicewatcher.com</td>
+        <td>juicewatcher.com</td>
     </tr>
     <tr>
             <td>locale IP</td>
@@ -47,13 +47,6 @@ Im folgenden Projekt werden verschiedene Aspekte behandelt:
             <td>team5.example.com</td>
         </tr>
 </table>
-
-<locale IP> 	ctfd.example.com
-<locale IP> 	team1.example.com
-<locale IP> 	team2.example.com
-<locale IP> 	team3.example.com
-<locale IP> 	team4.example.com
-<locale IP> 	team5.example.com
 
 ## 3 Installation:
 git clone https://github.com/xXfrenemyXx/ctfAutoDeploy.git
