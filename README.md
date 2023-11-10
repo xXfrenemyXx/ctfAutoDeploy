@@ -15,6 +15,9 @@ Das folgende Projekt besteht aus drei Hauptkomponenten
 2. Dem "juicewatcher", eine selbstgeschriebene JS Anwendung, welches regelmäßig die API abfrägt und  
 3. Überschreiben von bestehenden images (CTFd), sodass die Anwendung für den Test bereits entsprechend konfiguriert ist
 
+Anmerkung:
+Eigentlich sind die Juiceshop Instanzen und der CTFd mit dem gleiche Secret konfiguriert, sodass beim lösen einer Challenge die angezeigte flag im CTFd eingelöst werden kann. Jedoch konnte ich nach vielen Versuchen dieses Problem leider nicht lösen.
+
 ## 3 Architektur
 Die Architektur dieser Systeme lässt sich wie folgt beschreiben:
 Grundsätzlich läuft in diesem Projekt alles innerhalb von Minikube und verwendet werden dementsprechend Container. Die Eigenentwicklungen basieren alle auf JavaScript. 
