@@ -125,18 +125,37 @@ Dabei sollten folgende Aspekte berücksichtigt werden:
 ### 8.2 Datensicherheit in der Cloud
 #### Zugriffskontrolle und Authentifizierung:
 ##### Allgemeine Betrachtung:
+- Zugriffskontrolle gewährleistet, dass nur autorisierte Personen auf bestimmte Ressourcen zugreifen können. Authentifizierung stellt sicher, dass die Identität der Benutzer überprüft wird.
 ##### Spezifische Maßnahmen:
+- Verwendung von starken Passwörtern und Multi-Faktor-Authentifizierung.
+- Implementierung von Rollenbasierte Zugriffskontrolle (RBAC) für granulare Berechtigungen
 
 #### Verschlüsselung:
 ##### Allgemeine Betrachtung:
+- Verschlüsselung schützt Daten vor unberechtigtem Zugriff, indem sie sie in einen nicht lesbaren Code umwandelt.
 ##### Spezifische Maßnahmen:
+-  SSL/TLS-Verschlüsselung für die sichere Übertragung von Daten über Netzwerke.
+-  Verschlüsselung von Daten, die in Repositories oder Datenbanken gespeichert sind
 
 #### Netzwerksicherheit:
 ##### Allgemeine Betrachtung:
+-  Netzwerksicherheit bezieht sich auf den Schutz von Netzwerkinfrastrukturen vor Angriffen und unautorisiertem Zugriff.
 ##### Spezifische Maßnahmen:
+- Firewalls und Intrusion Detection/Prevention Systeme (IDS/IPS) implementieren
+- Regelmäßige Überprüfung und Aktualisierung von Netzwerkkonfigurationen
+- Netzsegmentierung
 
 #### Sicherheitsüberwachung und -prüfung:
 ##### Allgemeine Betrachtung:
+- Kontinuierliche Überwachung und Überprüfung ermöglichen die frühzeitige Erkennung von Sicherheitsverletzungen.
 ##### Spezifische Maßnahmen:
+- Implementierung von Sicherheitsprotokollierung und Überwachungstools.
+- Regelmäßige Sicherheitsaudits und Penetrationstests durchführen
 
+### 8.3 Fazit
+Datensicherheit in der Cloud erfordert ein umfassendes Sicherheitskonzept, das sowohl physische als auch virtuelle Schutzmaßnahmen umfasst. Die oben genannten Maßnahmen sind Beispiele, um die Vertraulichkeit, Integrität und Verfügbarkeit von Daten in der Cloud zu gewährleisten. Weiterhin ist die Einhaltung von Datenschutzprinzipien in der Cloud entscheidend, um das Vertrauen der Benutzer zu wahren und rechtliche Konflikte zu vermeiden. Dies erfordert klare Richtlinien, effektive Kommunikation mit den Benutzern und die Implementierung von Technologien, die die Minimierung und den Schutz von Daten unterstützen
+
+Im Bezug auf dieses Projekt hat der Datenschutz keine all zu hohe Priorität. In den Anwendungen dieses Projekts werden im Normalfall keine personenbezogenen Daten erhoben oder verarbeitet. Ein Grundmaß an Datenschutz sollte jedoch immer gewährleistet sein.
+
+Im Hinblick auf die Sicherheit, sieht das etwas anders aus. Im aktuellen Aufbau können Nutzer auf Instanzen fremder Teams zugreifen und könnten hier beispielsweise DoS-Attacken starten, um das jeweilige Team zu benachteiligen. Hier fehlt es an der Authentizierung gegenüber der Juiceshop Instanz, da das aktuell über Subdomains gelöst wurde. Eine Möglichkeit das zu ergänzen, wäre ein Reverseproxy an dem sich die Nutzer authentifzieren müssen. So wäre gewährleistet, dass nur berechtigte Nutzer eines Teams ihre Instanzen erreichen können.
 
