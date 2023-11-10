@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ctfd-deployment
+  labels:
+    app: ctfd
+    team: exampleTeam
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ctfd
+  template:
+    metadata:
+      labels:
+        app: ctfd
+    spec:
+      containers:
+      - name: ctfd
+        image: ghcr.io/xxfrenemyxx/cloudinfrastructure/configuredctfd:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000

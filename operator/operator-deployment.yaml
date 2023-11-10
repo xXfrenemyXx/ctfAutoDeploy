@@ -17,5 +17,5 @@ spec:
       serviceAccountName: operator
       containers:
       - name: operator
-        image: operator-image
-        imagePullPolicy: Never
+        image: ghcr.io/xxfrenemyxx/cloudinfrastructure/juiceoperator:latest
+        imagePullPolicy: Always

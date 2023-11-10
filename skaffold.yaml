@@ -4,9 +4,9 @@ metadata:
   name: ctfautodeploy
 manifests:
   rawYaml:
-#    - ctfd-deployment.yaml
-    - ctfd-ingress.yaml
-    - ctfd-service.yaml
+    - ctfd/ctfd-deployment.yaml
+    - ctfd/ctfd-ingress.yaml
+    - ctfd/ctfd-service.yaml
 #    - juiceshop-deployment.yaml
 #    - juiceshop-ingress.yaml
 #    - juiceshop-service.yaml

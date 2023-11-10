@@ -17,7 +17,7 @@ spec:
       serviceAccountName: juicewatcher 
       containers:
       - name: juicewatcher
-        image: juicewatcher-image
-        imagePullPolicy: Never
+        image: ghcr.io/xxfrenemyxx/cloudinfrastructure/juicewatcher:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
