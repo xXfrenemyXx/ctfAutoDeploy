@@ -98,16 +98,17 @@ Der Screencast ist in der ZIP im Abgabe-Bereich zu finden.
 - Traditionelle Bereitstellung: Traditionelle, nicht-containerisierte Bereitstellungsmethoden wäre hier als Alternative möglich. Jedoch überwiegen bei diesem Anwendungsfall klar die Vorteile der Cloud.
 
 ## 8 Datenschutz und Datensicherheit
-### 8. Datenschutz
+### 8.1 Datenschutz
 Grundsätzlich ist gerade der Datenschutz ein nicht zu vernachlässigendes Thema, gerade in der Cloud. Hier ist es nicht transparent, wo welche Daten wann wie und für was verarbeitet werden. Daher sollte hier immer auf Datensparsamkeit geachtet und bestmöglich der Datenschutz garantiert werden. 
 Dabei sollten folgende Aspekte berücksichtigt werden:
-Rechtskonformität
-Allgemeine Betrachtung:
-Rechtskonformität in der Cloud bezieht sich darauf, dass die Datenverarbeitung den geltenden Datenschutzgesetzen entspricht, unabhängig davon, ob die Daten lokal oder in der Cloud gespeichert sind.
-Spezifische Maßnahmen:
-Einhaltung lokaler Datenschutzgesetze und internationaler Standards wie der DSGVO.
-Klare Identifizierung und Dokumentation der Verarbeitung personenbezogener Daten.
 
-- Transparenz und Einwilligung
-- Datenvermeidung und -minimierung
+#### Rechtskonformität
+Allgemeine Betrachtung:
+- Rechtskonformität in der Cloud bezieht sich darauf, dass die Datenverarbeitung den geltenden Datenschutzgesetzen entspricht, unabhängig davon, ob die Daten lokal oder in der Cloud gespeichert sind.
+Spezifische Maßnahmen:
+- Einhaltung lokaler Datenschutzgesetze und internationaler Standards wie der DSGVO.
+- Klare Identifizierung und Dokumentation der Verarbeitung personenbezogener Daten.
+
+#### Transparenz und Einwilligung
+#### Datenvermeidung und -minimierung
 
