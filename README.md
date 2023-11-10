@@ -13,8 +13,13 @@ Im folgenden Projekt werden verschiedene Aspekte behandelt:
 - kubectl installiert
 - ingress addons enabled
 - hosts file nach folgendem Schema angepasst:
-<locale IP> 	example.com
-<locale IP> 	juicewatcher.com
+<ol>
+<li>locale IP 	example.com</li>
+<li>locale IP 	juicewatcher.com
+</li>
+<li>Maus</li>
+</ol>
+
 <locale IP> 	ctfd.example.com
 <locale IP> 	team1.example.com
 <locale IP> 	team2.example.com
